@@ -1,0 +1,7 @@
+.main-component {
+    display: flex;
+    flex-direction: row;
+}
+.button-styling {
+    padding-left: 65%;
+}

@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        /*------color variables------*/
+        --ambe_300: #ffcd66;
+        --black_900: #090909;
+        --black_9000: #000000;
+        --blue_gray_50: #e9edf1;
+        --blue_gray_700: #3e526e;
+        --blue_gray_700_01: #3f526e;
+        --gray_200: #ededed;
+        --gray_200_01: #eaeaea;
+        --gray_50: #f6f8fa;
+        --gray_600: #808281;
+        -gray_600_01: #6f767e;
+        --gray_900: #05162e;
+        --light_green_a700: #49ea3f;
+        --red_500: #ea4e3f;
+        --red_a200: #fe4949;
+        --white_a700: #ffffff;
+        /*------Border radius variables--*/
+        --radius-xs: 4px;
+        --radius-sm: 6px;
+        --radius-md: 12px;
+        /*------Spacing variables------*/
+        --space-xs: 8px;
+        --space-sm: 10px;
+        --space-md: 12px;
+        --space-lg: 20px;
+    }
+
+    [type="text"],
+    input:where(:not([type])),
+    [type="email"],
+    [type="url"],
+    [type="password"],
+    [type="number"],
+    [type="date"],
+    [type="datetime-local"],
+    [type="month"],
+    [type="search"],
+    [type="tel"],
+    [type="time"],
+    [type="week"],
+    [multiple],
+    textarea,
+    select {
+        appearance: none;
+        background-color: transparent;
+        border-color: unset;
+        border-width: 0;
+        border-radius: unset;
+        padding: unset;
+        font-size: unset;
+        line-height: unset;
+    }
+
+    /* Override default focus colors for tailwindcss-forms https://github.com/tailwindlabs/tailwindscss-forms */
+    [type="text"]:focus,
+    [type="email"]:focus,
+    [type="url"]:focus,
+    [type="password"]:focus,
+    [type="number"]:focus,
+    [type="date"]:focus,
+    [type="search"]:focus,
+    [multiple]:focus,
+    textarea:focus,
+    select:focus {
+        --tw-ring-color: transparent;
+        border-color: transparent;
+    }
+
+    [type="radio"]:focus,
+    [type="checkbox"]:focus {
+        --tw-ring-color: transparent;
+    }
+}

@@ -1,0 +1,16 @@
+.nav-style{
+    display: flex;
+    flex-direction: row;
+}
+.profile-style{
+    padding-left: 40%;
+}
+.search-style{
+    padding-left: 20%;
+}
+.help-style{
+    padding-left: 95%;
+}
+.name-style{
+    padding-left: 15%;
+}
